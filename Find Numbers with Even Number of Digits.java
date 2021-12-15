@@ -3,6 +3,10 @@ class Solution {
         int res = 0;
         int currentNum = 0;
         int count = 0;
+        /*
+        how to go through each digit in a number:
+        just keep dividing by 10 until reaches 0
+        */
         
         for(int num: nums){
             currentNum = num;
