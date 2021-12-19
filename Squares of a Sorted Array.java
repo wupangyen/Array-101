@@ -66,3 +66,27 @@ else{
 return result;
 
 */
+
+
+class Solution {
+    public int[] sortedSquares(int[] nums) {
+        
+        // two pointer
+        int[] res = new int[nums.length];
+        int pointer_a = 0;
+        int pointer_b = nums.length - 1;
+        
+        for(int i = nums.length-1; i >= 0; i--){
+            
+            if(Math.abs(nums[pointer_a]) > Math.abs(nums[pointer_b])){
+                res[i] = nums[pointer_a] * nums[pointer_a];
+                pointer_a++;
+            }
+            else{
+                 res[i] = nums[pointer_b] * nums[pointer_b];
+                pointer_b--;
+            }
+        }
+        return res;
+    }
+}
