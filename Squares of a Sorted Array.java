@@ -38,3 +38,31 @@ nums is sorted in non-decreasing order.
 
 Follow up: Squaring each element and sorting the new array is very trivial, could you find an O(n) solution using a different approach?
 */
+
+
+/*
+Two Pointers 
+
+a pointer points to the smallest element 
+
+b pointer points to the largest element 
+
+created a new array for result
+
+loop from the last elem of the array int i = arr.len - 1; i > 0 ; i--
+
+if (Math.abs(arr[a_pointer] > Math.abs(arr[b_pointer]))){
+    result[i] = arr[a_pointer] * arr[a_pointer]
+    a_pointer++;
+}
+else{
+ // means elem at b_pointer is greater than a pointer 
+ 
+ result[i] = arr[b_pointer] * arr[b_pointer]
+ b_pointer--;
+}
+
+
+return result;
+
+*/
