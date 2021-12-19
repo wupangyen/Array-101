@@ -55,3 +55,11 @@ Constraints:
 1 <= nums.length <= 500
 1 <= nums[i] <= 105
 */
+
+
+/*
+10 - 99 even
+1000-9999 even
+100000 even 
+
+*/
